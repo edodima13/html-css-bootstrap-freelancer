@@ -12,7 +12,7 @@ main section{
     height: 400px;
 }
 
-.text-center .rounded{
+.text-center .ms_rounded{
     background-color: black;
     height: 120px;
 }
@@ -21,12 +21,12 @@ main section:nth-child(2){
     background-color: #1ABC9C;
 }
 
-footer div:first-child{
+footer .container-fluid{
     height: 150px;
     background-color: #3A546D;
 }
 
-footer div:last-child{
+footer .text-center{
     height: 60px;
     background-color: #2C3E50;
 }
