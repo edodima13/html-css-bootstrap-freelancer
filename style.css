@@ -1,0 +1,27 @@
+header nav{
+    height: 60px;
+    background-color: #2C3E50;
+}
+
+header div{
+    height: 300px;
+    background-color: #1ABC9C;
+}
+
+main section{
+    height: 400px;
+}
+
+main section:nth-child(2){
+    background-color: #1ABC9C;
+}
+
+footer div:first-child{
+    height: 150px;
+    background-color: #3A546D;
+}
+
+footer div:last-child{
+    height: 60px;
+    background-color: #2C3E50;
+}
