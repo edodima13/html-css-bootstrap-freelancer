@@ -12,6 +12,11 @@ main section{
     height: 400px;
 }
 
+.text-center .rounded{
+    background-color: black;
+    height: 120px;
+}
+
 main section:nth-child(2){
     background-color: #1ABC9C;
 }
