@@ -7,21 +7,25 @@ header nav{
     background-color: #2C3E50;
 }
 
-header .text-center{
-    height: 300px;
+#avatar{
     background-color: #1ABC9C;
 }
 
+#avatar img{
+    max-width: 150px;
+}
+
+header .text-center{
+    
+}
+
 #portfolio{
-    height: 500px;
 }
 
 #portfolio .col-4{
-    max-width: calc((100% / 3) - 15px);
 }
 
-.text-center .ms_rounded{
-    background-color: black;
+.ms_rounded img{
     border-radius: 5px;
 }
 
@@ -47,6 +51,6 @@ footer .container-fluid{
 }
 
 footer .ms_bluedark{
-    height: 60px;
+    height: 80px;
     background-color: #2C3E50;
 }
