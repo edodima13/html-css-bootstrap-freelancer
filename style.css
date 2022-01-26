@@ -1,10 +1,28 @@
+body{
+    max-width: 100%;
+}
+
 ul{
     list-style: none;
 }
 
-header nav{
-    height: 60px;
+header .navbar{
     background-color: #2C3E50;
+}
+
+.collapse .navbar-collapse{
+    display: none;
+}
+
+header nav .portfolio{
+    display: flex;
+    gap: 10px;
+    text-transform: uppercase;
+    align-items: center;
+}
+
+.navbar-expand-lg .navbar-collapse{
+    display: none;
 }
 
 #avatar{
@@ -15,22 +33,67 @@ header nav{
     max-width: 150px;
 }
 
-header .text-center{
-    
-}
-
-#portfolio{
-}
-
-#portfolio .col-4{
-}
-
 .ms_rounded img{
     border-radius: 5px;
 }
 
+.ms_rounded img:hover i{
+    display: block;
+}
+
+.ms_rounded{
+    position: relative;
+}
+
+.ms_rounded i{
+    transform: translate(-50% , -50%);
+    position: absolute;
+    font-size: 4vmin;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    display: none;
+}
+
+.ms_rounded:hover i{
+    display: block;
+}
+
+#portfolio:hover img{
+    opacity: 0.3;
+}
+
+.img-fluid::after{
+    content: "";
+    display: block;
+    position: absolute;
+    background-color: #1ABC9C;
+    opacity: 0;
+    transition: opacity 0.2 ease-in-out;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+#portfolio .col-12{
+    position: relative;
+}
+
 main section:nth-child(2){
     background-color: #1ABC9C;
+}
+
+.star-before{
+    display: block;
+    content: "";
+    height: 2px;
+    width: 90px;
+    background-color: #2C3E50;
+}
+
+.ms_column-count{
+    column-count: 2;
 }
 
 #contact ul{
@@ -50,7 +113,38 @@ footer .container-fluid{
     background-color: #3A546D;
 }
 
+.social-icons i{
+    font-size: 14px;
+}
+
+.start-boot{
+    color: #1ABC9C;
+}
+
+footer p:last-child{
+    font-size: 11px;
+}
+
 footer .ms_bluedark{
     height: 80px;
     background-color: #2C3E50;
+}
+
+
+/*MEDIA*/
+
+@media all and (max-width: 575px) {
+    .ms_column-count{
+        column-count: 1;
+    }
+    header nav .portfolio{
+        display: none;
+    }
+}
+
+@media (min-width: 575px){
+    .navbar-expand-lg .navbar-toggler{
+        display: none;
+    }
+    
 }
