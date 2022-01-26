@@ -1,3 +1,7 @@
+ul{
+    list-style: none;
+}
+
 header nav{
     height: 60px;
     background-color: #2C3E50;
@@ -8,25 +12,41 @@ header .text-center{
     background-color: #1ABC9C;
 }
 
-main section{
-    height: 400px;
+#portfolio{
+    height: 500px;
+}
+
+#portfolio .col-4{
+    max-width: calc((100% / 3) - 15px);
 }
 
 .text-center .ms_rounded{
     background-color: black;
-    height: 120px;
+    border-radius: 5px;
 }
 
 main section:nth-child(2){
     background-color: #1ABC9C;
 }
 
+#contact ul{
+    padding-left: 0;
+}
+
+#contact ul li{
+    padding: 10px 0;
+    border-bottom: 1px solid #cecaca;
+}
+
+#contact button{
+    background-color: #1ABC9C;
+}
+
 footer .container-fluid{
-    height: 150px;
     background-color: #3A546D;
 }
 
-footer .text-center{
+footer .ms_bluedark{
     height: 60px;
     background-color: #2C3E50;
 }
